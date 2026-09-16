@@ -1,0 +1,227 @@
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .cards_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .servicos_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero_container {
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header_container {
+        min-height: auto;
+
+        padding: 20px 0;
+
+        flex-direction: row;
+
+        gap: 20px;
+    }
+
+    .nav ul {
+        gap: 20px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /* HERO */
+
+    .hero_container {
+        min-height: auto;
+
+        padding: 55px 0;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero_content p {
+        font-size: 0.95rem;
+    }
+
+    .hero_image img {
+        width: 90%;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 55px 0;
+    }
+
+    .cards_container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+
+    /* SERVIÇOS */
+
+    .servicos {
+        padding: 55px 0;
+    }
+
+    .servicos_container {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .servico_card {
+        padding: 30px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES PEQUENOS
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        position: relative;
+    }
+
+    .header_container {
+        position: relative;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuDropDown {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 15px 5%;
+
+        background-color: var(--cor-fundo);
+
+        border-top: 1px solid rgba(33, 96, 51, 0.15);
+        border-bottom: 3px solid var(--cor-principal);
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+
+        z-index: 1000;
+
+        display: none;
+    }
+
+    .menuDropDown.ativo {
+        display: block;
+    }
+
+    .menuDropDown ul {
+        display: flex;
+        flex-direction: column;
+
+        gap: 5px;
+
+        list-style: none;
+    }
+
+    .menuDropDown a {
+        display: block;
+
+        padding: 10px 5px;
+
+        color: var(--cor-principal);
+
+        font-weight: 700;
+    }
+
+    .menuDropDown a:hover {
+        color: var(--cor-secundaria);
+    }
+
+    .hero_container,
+    .cards_container,
+    .servicos_container {
+        width: 92%;
+    }
+
+    .hero_content h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero_content p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        width: 100%;
+
+        text-align: center;
+
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 50px 20px 25px;
+    }
+
+    .card h3 {
+        font-size: 0.85rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+
+    .servico_card p,
+    .materiais span {
+        font-size: 0.9rem;
+    }
+
+}

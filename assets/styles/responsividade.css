@@ -4,6 +4,8 @@
 
 @media (max-width: 1000px) {
 
+
+
     .cards_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -36,6 +38,7 @@
 
         gap: 20px;
     }
+
 
     .nav ul {
         gap: 20px;
@@ -75,6 +78,27 @@
         width: 90%;
     }
 
+    #localizacao {
+        padding: 70px 0;
+    }
+
+    #localizacao>h2 {
+        margin-bottom: 35px;
+    }
+
+    .local_container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .local_map,
+    #localizacao iframe {
+        min-height: 350px;
+    }
+
+    .local_info {
+        padding: 30px;
+    }
 
     /* SOBRE */
 
@@ -124,6 +148,13 @@
 
     .header_container {
         position: relative;
+    }
+
+    .hero_overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(358deg, rgb(15 70 40 / 61%), rgb(30 100 60 / 76%), rgba(30, 100, 60, 0.20));
+        z-index: 1;
     }
 
     .nav {

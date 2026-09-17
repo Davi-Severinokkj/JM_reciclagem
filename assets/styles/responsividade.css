@@ -153,7 +153,7 @@
     .hero_overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(358deg, rgb(15 70 40 / 61%), rgb(30 100 60 / 76%), rgba(30, 100, 60, 0.20));
+        background: linear-gradient(358deg, rgb(30 100 60 / 76%));
         z-index: 1;
     }
 
@@ -227,7 +227,7 @@
     }
 
     .hero_content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .button {
@@ -247,7 +247,7 @@
     }
 
     .card p {
-        font-size: 0.9rem;
+        font-size: 1.rem;
     }
 
     .servico_card p,

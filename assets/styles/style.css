@@ -194,7 +194,7 @@ a {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(272deg, rgb(15 70 40 / 84%), rgb(30 100 60 / 76%), rgba(30, 100, 60, 0.20));
+    background: linear-gradient(358deg, rgb(30 100 60 / 76%));
 
     z-index: 1;
 }
@@ -701,4 +701,85 @@ a {
 
     color: var(--cor-principal);
     font-weight: 700;
+}
+
+.whatsapp-float {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    font-size: 32px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+
+    transition: .3s;
+    z-index: 9999;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    background-color: #20b358;
+}
+
+.whatsapp-float {
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.whatsapp-float {
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.whatsapp-float.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.btn-subir {
+    transition: 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 9999;
+    /* <--- Adicione isso aqui! */
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+.btn-subir:hover {
+    transition: 0.3s;
+    transform: scale(1.03);
+    background-color: var(--cor-secundaria);
+    /* Cor quando passa o mouse */
 }

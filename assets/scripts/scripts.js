@@ -8,6 +8,11 @@ botao.addEventListener("click", () => {
 
 });
 
+menu.addEventListener("click" , (l)=>{
+    document.body.style.overflow = "auto";
+    menu.classList.remove("ativo");
+} )
+
 document.addEventListener("click", (e) => {
     if (
         !menu.contains(e.target) &&

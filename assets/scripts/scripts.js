@@ -8,10 +8,10 @@ botao.addEventListener("click", () => {
 
 });
 
-menu.addEventListener("click" , (l)=>{
+menu.addEventListener("click", (l) => {
     document.body.style.overflow = "auto";
     menu.classList.remove("ativo");
-} )
+})
 
 document.addEventListener("click", (e) => {
     if (
@@ -22,3 +22,27 @@ document.addEventListener("click", (e) => {
         menu.classList.remove("ativo");
     }
 });
+
+const footer = document.querySelector('.footer');
+const whatsapp = document.querySelector('.whatsapp-float');
+const btnSubir = document.querySelector('.btn-subir');
+
+const observer = new IntersectionObserver((entries) => {
+
+    if (entries[0].isIntersecting) {
+
+        whatsapp.classList.add('hide');
+        btnSubir.classList.add('hide');
+
+    } else {
+
+        whatsapp.classList.remove('hide');
+        btnSubir.classList.remove('hide');
+
+    }
+
+}, {
+    threshold: 0.1
+});
+
+observer.observe(footer);

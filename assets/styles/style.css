@@ -1,6 +1,8 @@
 /* =========================================================
    RESET
 ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -8,12 +10,17 @@
     box-sizing: border-box;
 }
 
+button{
+    background: none;
+    border: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #216033;
     background-color: #ffffff;
     line-height: 1.5;
@@ -55,7 +62,7 @@ a {
 
 .header {
     width: 100%;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-principal);
 }
 
 .header_container {
@@ -87,7 +94,7 @@ a {
     position: relative;
 
     font-weight: 700;
-    color: var(--cor-secundaria);
+    color: white;
 
     transition: var(--transition);
 }
@@ -108,7 +115,7 @@ a {
 }
 
 .nav a:hover {
-    color: var(--cor-principal);
+    color: var(--cor-destaque);
 }
 
 .nav a:hover::after {
@@ -194,7 +201,7 @@ a {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(358deg, rgb(30 100 60 / 76%));
+    background: linear-gradient(358deg, #007f70c0);
 
     z-index: 1;
 }
@@ -221,7 +228,7 @@ a {
 
     color: var(--cor-branco);
 
-    font-size: 1.05rem;
+    font-size: 1.3rem;
     line-height: 1.7;
 
 }
@@ -280,7 +287,7 @@ a {
 .sobre {
     padding: 70px 0 90px;
 
-    background-color: var(--cor-fundo);
+    background-color: white;
 }
 
 .sobre .section_title {
@@ -319,13 +326,13 @@ a {
     flex-direction: column;
 
     transition: var(--transition);
+    box-shadow: 5px 5px 10px black;
 }
 
 .card:hover {
     transform: translateY(-7px);
 
-    box-shadow:
-        0 15px 30px rgba(33, 96, 51, 0.15);
+
 }
 
 
@@ -381,9 +388,11 @@ a {
 }
 
 .card p {
+    text-align: center;
+    font-weight: 600;
     color: var(--cor-principal);
 
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -394,12 +403,15 @@ a {
 
 .servicos {
     padding: 80px 0;
-
-    background-color: var(--cor-branco);
+    background-color: #E8ECE0;
 }
 
 .servicos .section_title {
     margin-bottom: 50px;
+}
+
+.servicos .section_title span {
+    font-size: 1.1rem;
 }
 
 .servicos_container {
@@ -423,7 +435,7 @@ a {
 
     border-radius: var(--radius);
 
-    background-color: var(--cor-fundo);
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -496,7 +508,7 @@ a {
 .materiais span {
     color: #31583b;
 
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .button--dark {
@@ -516,7 +528,7 @@ a {
 
 
 #localizacao {
-    background-color: var(--cor-fundo);
+    background-color: #E8ECE0;
 
     padding: 90px 0;
 }
@@ -528,11 +540,9 @@ a {
 #localizacao>span {
     display: block;
 
-    margin-bottom: 15px;
-
     color: var(--cor-secundaria);
 
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: 2px;
 
@@ -549,14 +559,6 @@ a {
 
     text-align: center;
     transition: 0.3s;
-}
-
-#localizacao h2:hover {
-    color: var(--cor-secundaria);
-    cursor: default;
-    transition: 0.3s;
-    transform: translateY(-3px);
-    text-decoration: underline;
 }
 
 /* -------------------------
@@ -580,6 +582,7 @@ a {
 .local_subtitle {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 1.1rem;
 }
 
 /* -------------------------
@@ -727,7 +730,7 @@ a {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
 
     transition: .3s;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .whatsapp-float:hover {
@@ -761,6 +764,8 @@ a {
     pointer-events: none;
 }
 
+
+
 .btn-subir {
     transition: 0.3s;
     position: fixed;
@@ -777,9 +782,265 @@ a {
     font-size: 1.3rem;
 }
 
+.btn-subir.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .btn-subir:hover {
     transition: 0.3s;
     transform: scale(1.03);
     background-color: var(--cor-secundaria);
     /* Cor quando passa o mouse */
+}
+
+/* =========================================================
+   SOBRE A EMPRESA
+========================================================= */
+
+#sobre_empresa {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.sobre_empresa_container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+/* -------------------------
+   CONTEÚDO
+------------------------- */
+
+.content_sobre_empresa {
+    flex: 1;
+    max-width: 600px;
+}
+
+.content_sobre_empresa span {
+    display: inline-block;
+
+    margin-bottom: 12px;
+    color: var(--cor-secundaria);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.content_sobre_empresa h2 {
+    margin-bottom: 25px;
+
+    color: #216033;
+    font-size: 2.5rem;
+    line-height: 1.15;
+}
+
+.content_sobre_empresa p {
+    margin-bottom: 18px;
+
+    color: #555555;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* -------------------------
+   IMAGEM
+------------------------- */
+
+.img_sobre_empresa {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 500px;
+}
+
+.img_sobre_empresa img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+
+    display: block;
+
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+    color: #ffffff;
+    z-index: 99999;
+}
+
+
+/* =========================================================
+   PARTE PRINCIPAL
+========================================================= */
+
+.footer_principal {
+    width: 100%;
+    height: 76px;
+
+    background-color: #216033;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footer_container {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo img {
+    display: block;
+
+    width: 155px;
+    height: auto;
+}
+
+
+/* =========================================================
+   REDES SOCIAIS
+========================================================= */
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_social a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer_social a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   DIVISÓRIAS
+========================================================= */
+
+.footer_divisor {
+    width: 2px;
+    height: 21px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    margin: 0 5px;
+}
+
+/* =========================================================
+   DIREITOS
+========================================================= */
+
+.footer_direitos {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.footer_links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer_links a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px ;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer_links a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   CRÉDITO
+========================================================= */
+
+.footer_credito {
+    width: 100%;
+    height: 57px;
+
+    background-color: #03554c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_credito p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-align: center;
 }

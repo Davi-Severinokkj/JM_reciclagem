@@ -133,6 +133,88 @@
         padding: 30px 25px;
     }
 
+    #sobre_empresa {
+        padding: 70px 0;
+    }
+
+    .sobre_empresa_container {
+        width: 90%;
+        flex-direction: column;
+        gap: 40px;
+        text-align: left;
+    }
+
+    .content_sobre_empresa {
+        max-width: 100%;
+    }
+
+    .content_sobre_empresa h2 {
+        font-size: 2rem;
+    }
+
+    .content_sobre_empresa p {
+        font-size: 0.95rem;
+    }
+
+    .img_sobre_empresa {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .img_sobre_empresa img {
+        max-width: 100%;
+    }
+
+    .footer_principal {
+        height: auto;
+        padding: 25px 20px;
+    }
+
+    .footer_container {
+        max-width: 100%;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .footer_logo {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .footer_social {
+        order: 2;
+    }
+
+    .footer_direitos {
+        order: 3;
+    }
+
+    .footer_divisor {
+        display: none;
+    }
+
+    .footer_links {
+        order: 4;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .footer_credito {
+        height: 50px;
+        padding: 0 20px;
+    }
+
 }
 
 
@@ -153,7 +235,7 @@
     .hero_overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(358deg, rgb(30 100 60 / 76%));
+
         z-index: 1;
     }
 

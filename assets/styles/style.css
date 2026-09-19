@@ -874,6 +874,13 @@ a {
 
     border-radius: 15px;
     object-fit: cover;
+    transition: 0.3s;
+    box-shadow: 5px 5px 15px black;
+}
+
+.img_sobre_empresa img:hover{
+    transition: 0.3s;
+    transform: scale(1.03);
 }
 
 /* =========================================================

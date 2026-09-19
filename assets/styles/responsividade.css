@@ -215,6 +215,100 @@
         padding: 0 20px;
     }
 
+    .politica_privacidade {
+        padding: 45px 18px;
+    }
+
+    .politica_header {
+        margin-bottom: 45px;
+    }
+
+    .politica_header h1 {
+        font-size: 1.8rem;
+    }
+
+    .politica_header span {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+    }
+
+    .politica_secao {
+        margin-bottom: 35px;
+    }
+
+    .politica_secao h2 {
+        font-size: 1.25rem;
+    }
+
+    .politica_secao h3 {
+        font-size: 1.05rem;
+    }
+
+    .politica_secao p,
+    .politica_secao li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .politica_secao p {
+        text-align: left;
+    }
+
+    .politica_secao ul {
+        padding-left: 22px;
+    }
+
+    .politica_contato {
+        padding: 20px;
+    }
+
+    .termos_uso {
+        padding: 45px 18px;
+    }
+
+    .termos_header {
+        margin-bottom: 45px;
+    }
+
+    .termos_header h1 {
+        font-size: 1.8rem;
+    }
+
+    .termos_header span {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+    }
+
+    .termos_secao {
+        margin-bottom: 35px;
+    }
+
+    .termos_secao h2 {
+        font-size: 1.25rem;
+    }
+
+    .termos_secao h3 {
+        font-size: 1.05rem;
+    }
+
+    .termos_secao p,
+    .termos_secao li {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .termos_secao p {
+        text-align: left;
+    }
+
+    .termos_secao ul {
+        padding-left: 22px;
+    }
+
+    .termos_contato {
+        padding: 20px;
+    }
+
 }
 
 

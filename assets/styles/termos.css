@@ -1,0 +1,190 @@
+/* =========================================================
+   TERMOS DE USO
+========================================================= */
+
+.termos_uso {
+    width: 100%;
+    padding: 70px 20px;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.termos_container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+========================================================= */
+
+.termos_header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.termos_header span {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #216033;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.termos_header h1 {
+    margin: 0;
+
+    color: #222222;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.termos_data {
+    margin-top: 15px;
+
+    color: #777777;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   SEÇÕES
+========================================================= */
+
+.termos_secao {
+    margin-bottom: 45px;
+}
+
+.termos_secao h2 {
+    margin-bottom: 18px;
+
+    color: #216033;
+    font-size: 1.45rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.termos_secao h3 {
+    margin: 28px 0 12px;
+
+    color: #333333;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TEXTOS
+========================================================= */
+
+.termos_secao p {
+    margin-bottom: 18px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: justify;
+}
+
+.termos_secao strong {
+    color: #2d2d2d;
+}
+
+
+/* =========================================================
+   LISTAS
+========================================================= */
+
+.termos_secao ul {
+    margin: 15px 0 20px;
+    padding-left: 25px;
+}
+
+.termos_secao li {
+    margin-bottom: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444444;
+
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.termos_secao a {
+    color: #216033;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.termos_secao a:hover {
+    color: #174824;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   CONTATO
+========================================================= */
+
+.termos_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 20px;
+    padding: 25px;
+
+    background-color: #f7f7f7;
+    border-left: 4px solid #216033;
+    border-radius: 4px;
+}
+
+.termos_contato strong {
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+.termos_contato span,
+.termos_contato a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn_voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #216033;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.btn_voltar:hover {
+    gap: 14px;
+    color: #174824;
+}
+
+.btn_voltar i {
+    font-size: 18px;
+}
